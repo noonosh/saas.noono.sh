@@ -172,9 +172,14 @@ function App() {
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg">
                 <Code className="w-5 h-5 text-white" />
               </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                NOONOSH
-              </span>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                  NOONOSH
+                </span>
+                <span className="text-xs text-gray-400 -mt-1 font-light tracking-wider">
+                  LONDON
+                </span>
+              </div>
             </motion.a>
 
             <div className="hidden md:flex space-x-6 mx-8">
@@ -320,7 +325,8 @@ function App() {
           >
             I help businesses build exceptional software solutions. From SaaS
             platforms to custom applications, I bring your ideas to life with
-            modern technology and clean code.
+            modern technology and clean code. Based in London, I work with
+            clients worldwide.
           </motion.p>
 
           <motion.div
@@ -518,9 +524,9 @@ function App() {
             </h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                I'm a self-taught, "never-CTRL+Z" type developer with a
-                First-Class degree in Computer Science from Cambridge, UK.
-                Currently focused on helping businesses innovate through
+                I'm a self-taught, "never-CTRL+Z" type developer based in London
+                with a First-Class degree in Computer Science from Cambridge,
+                UK. Currently focused on helping businesses innovate through
                 technology.
               </p>
               <p className="text-base text-gray-400 leading-relaxed">
@@ -842,13 +848,18 @@ function App() {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg">
                   <Code className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  NOONOSH
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    NOONOSH
+                  </span>
+                  <span className="text-xs text-gray-400 -mt-1 font-light tracking-wider">
+                    LONDON
+                  </span>
+                </div>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
-                Software Developer & Computer Scientist helping businesses build
-                exceptional digital solutions.
+                London-based Software Developer & Computer Scientist helping
+                businesses build exceptional digital solutions.
               </p>
               <p className="text-sm text-gray-500">
                 "I swear, by my life and my love of it, that I will never live
