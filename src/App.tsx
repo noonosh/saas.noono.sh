@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   motion,
   useScroll,
@@ -196,6 +196,7 @@ function App() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="hidden md:flex bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-200 items-center gap-2"
+                aria-label="Contact Noonosh via email"
               >
                 <Mail className="w-4 h-4" />
                 REACH OUT
@@ -278,6 +279,7 @@ function App() {
       <motion.section
         ref={heroRef}
         className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden pt-32 pb-20"
+        aria-label="Hero section introducing Noonosh, Software Developer"
       >
         {/* Hero Content - Moved Up */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center mb-16">
@@ -412,7 +414,11 @@ function App() {
       </motion.section>
 
       {/* Portfolio Section - New */}
-      <section id="portfolio" className="py-32 px-6 bg-gray-800/30">
+      <section
+        id="portfolio"
+        className="py-32 px-6 bg-gray-800/30"
+        aria-label="Portfolio showcasing recent work"
+      >
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -494,7 +500,11 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 px-4">
+      <section
+        id="about"
+        className="py-24 px-4"
+        aria-label="About Noonosh - background and education"
+      >
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -576,7 +586,11 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 px-4 bg-gray-800/30">
+      <section
+        id="services"
+        className="py-24 px-4 bg-gray-800/30"
+        aria-label="Services offered - full-stack development and SaaS solutions"
+      >
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -671,7 +685,10 @@ function App() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-4 bg-gray-800/30 overflow-hidden">
+      <section
+        className="py-24 px-4 bg-gray-800/30 overflow-hidden"
+        aria-label="Client testimonials and reviews"
+      >
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -763,6 +780,7 @@ function App() {
       <section
         id="contact"
         className="py-24 px-4 bg-gradient-to-r from-blue-600/20 to-purple-600/20"
+        aria-label="Contact information and call to action"
       >
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
