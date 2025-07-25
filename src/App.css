@@ -49,14 +49,15 @@
 
 .testimonials-container {
   animation: scroll-left linear infinite;
+  will-change: transform;
 }
 
 .testimonials-container:hover {
   animation-play-state: paused;
 }
 
-.testimonial-card:hover ~ .testimonials-container,
-.testimonials-container:has(.testimonial-card:hover) {
+/* Fix hover pause to work properly */
+.testimonials-section:hover .testimonials-container {
   animation-play-state: paused;
 }
 

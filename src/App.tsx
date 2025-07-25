@@ -692,7 +692,7 @@ function App() {
 
       {/* Testimonials */}
       <section
-        className="py-24 px-4 bg-gray-800/30 overflow-hidden"
+        className="py-24 px-4 bg-gray-800/30 overflow-hidden testimonials-section"
         aria-label="Client testimonials and reviews"
       >
         <div className="max-w-7xl mx-auto">
@@ -716,8 +716,8 @@ function App() {
             <div
               className="flex gap-8 testimonials-container"
               style={{
-                width: `${testimonials.length * 2 * 100}%`,
-                animationDuration: `${testimonials.length * 30}s`,
+                width: `${testimonials.length * 2 * 320}px`,
+                animationDuration: `${Math.max(20, testimonials.length * 5)}s`,
               }}
             >
               {/* First set of testimonials */}
