@@ -14,7 +14,7 @@ Disallow: /src/
 Disallow: /node_modules/
 
 # Sitemap location
-Sitemap: https://saas.noono.sh/sitemap.xml
+Sitemap: https://work.noono.sh/sitemap.xml
 
 # Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1 
